@@ -8,15 +8,22 @@
     </head>
     <body>
         <nav>
-            <a href="#hook-home"><div>Home</div></a>
-            <a href="#hook-services"><div>Services</div></a>
-            <a href="#hook-about"><div>About</div></a>
+            <div style="position: absolute; left: 0px; padding: 5px;">
+                <img style="height: calc(100% - 10px)" src="./assets/logo.png">
+            </div>
+            <a href="#home"><div class="nav_option">Home</div></a>
+            <a href="#services"><div class="nav_option">Services</div></a>
+            <a href="#about"><div class="nav_option">About</div></a>
         </nav>
-        <div id="hook-home" style="background-color: #014648; width: 100%; text-align: center; margin-bottom: -1px;">
-            <img style="padding: 125px 0px 70px 0px; display: inline-block; width: 50%;" src="./assets/logo.png">
+        <div style="display: grid; width: 100%; background-color: #798e8d; margin-bottom: -50px;">
+            <div style="grid-area: 1 / 1 / 2 / 2; background-color: #054167; height: 50%; width: 100%; z-index: 0;"></div>
+            <div style="grid-area: 1 / 1 / 2 / 2; background-color: #054167; width: 100%; transform: skewY(-3deg); z-index: 1;"></div>
+            <div style="grid-area: 1 / 1 / 2 / 2; background-color: #014648EA; width: 100%; transform: skewY(5deg); margin-bottom: 50px; z-index: 2;"></div>
+            <div style="grid-area: 1 / 1 / 2 / 2; width: 100%; text-align: center; z-index: 3;">
+                <img style="padding: 125px 0px 125px 0px; display: inline-block; width: 50%;" src="./assets/logo.png">
+            </div>
         </div>
-        <img style="width: 100%; margin: -1px 0px -3px 0px;" src="./assets/under_logo_transition.svg">
-        <div style="background-color: #798e8d; width: 100%; padding-bottom: 100px;">
+        <div style="background-color: #798e8d; width: 100%; padding: 150px 0px 100px 0px; ">
             <h2>Get a free quote today!</h2>
             <p style="text-align: center; font-size: 24pt; padding: 0px 20% 0px 20%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             <div style="width: 100%; text-align: center;">
@@ -30,7 +37,7 @@
                 </a>
             </div>
         </div>
-        <div id="hook-services" style="display: grid; width: 100%; margin: -3px 0px -3px 0px;">
+        <div id="services" style="display: grid; width: 100%; margin: -3px 0px -3px 0px;">
             <div style="grid-area: 1 / 1 / 2 / 2; width: 100%; height: 100%; background-color: #798e8d; z-index: 1;"></div>
             <div style="grid-area: 1 / 1 / 2 / 2; width: 100%; height: 100%; background-color: #657a79; transform: skewY(5deg); z-index: 2;"></div>
             <div style="grid-area: 1 / 1 / 2 / 2; width: 100%; height: 100%; z-index: 3;">
@@ -88,6 +95,6 @@
                 </div>
             </div>
         </div>
-        <div id="hook-about" style="width: 100%; background-color: #798e8d; height: 400px;"></div>
+        <div id="about" style="width: 100%; background-color: #798e8d; height: 400px;"></div>
     </body>
 </html>

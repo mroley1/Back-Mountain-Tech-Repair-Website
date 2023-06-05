@@ -13,7 +13,6 @@ body {
     margin: 0px;
     display: flex;
     flex-direction: column;
-    background-color: #014648;
 }
 
 nav {
@@ -36,15 +35,18 @@ nav div {
     padding: 0px 5px 0px 5px;
     height: 100%;
     width: min-content;
+    line-height: 150%;
     font-family: Signika;
     font-size: 29pt;
     color: #aed2cf;
+}
+
+nav .nav_option {
     cursor: pointer;
-    line-height: 150%;
     transition: all 0.1s linear;
 }
 
-nav div:hover {
+nav .nav_option:hover {
     background-color: #aed2cf;
     color: #0D2624;
 }

@@ -15,7 +15,7 @@
             <a href="#services"><div class="nav_option">Services</div></a>
             <a href="#about"><div class="nav_option">About</div></a>
         </nav>
-        <div style="display: grid; width: 100%; background-color: #798e8d; margin-bottom: -50px;">
+        <div id="home" style="display: grid; width: 100%; background-color: #798e8d; margin-bottom: -50px;">
             <div style="grid-area: 1 / 1 / 2 / 2; background-color: #054167; height: 50%; width: 100%; z-index: 0;"></div>
             <div style="grid-area: 1 / 1 / 2 / 2; background-color: #054167; width: 100%; transform: skewY(-3deg); z-index: 1;"></div>
             <div style="grid-area: 1 / 1 / 2 / 2; background-color: #014648EA; width: 100%; transform: skewY(5deg); margin-bottom: 50px; z-index: 2;"></div>
@@ -23,71 +23,79 @@
                 <img style="padding: 125px 0px 125px 0px; display: inline-block; width: 50%;" src="./assets/logo.png">
             </div>
         </div>
-        <div style="background-color: #798e8d; width: 100%; padding: 150px 0px 100px 0px; ">
+        <div style="background-color: #798e8d; width: 100%; padding: 150px 0px 250px 0px; ">
             <h2>Get a free quote today!</h2>
-            <p style="text-align: center; font-size: 24pt; padding: 0px 20% 0px 20%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p style="text-align: center; font-size: 24pt; padding: 0px 20% 0px 20%;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             <div style="width: 100%; text-align: center;">
                 <a href="tel:0000000000">
                     <div class="link_button">
                         <div>
                             <img src="./assets/phone-solid.svg">
-                            <span>Call for a Quote</span>
+                            <span>
+                                Call for a Quote
+                            </span>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
-        <div id="services" style="display: grid; width: 100%; margin: -3px 0px -3px 0px;">
+        <div id="services" style="display: grid; width: 100%; margin: -150px 0px -150px 0px;">
             <div style="grid-area: 1 / 1 / 2 / 2; width: 100%; height: 100%; background-color: #798e8d; z-index: 1;"></div>
             <div style="grid-area: 1 / 1 / 2 / 2; width: 100%; height: 100%; background-color: #657a79; transform: skewY(5deg); z-index: 2;"></div>
             <div style="grid-area: 1 / 1 / 2 / 2; width: 100%; height: 100%; z-index: 3;">
                 <h1>What I Do</h1>
-                <div style="display: flex; flex-direction: row; flex-wrap: wrap; margin-bottom: 100px; justify-content: center;">
-                    <div style="position: relative; width: 400px; border-radius: 18px; background-color: #9eafae; margin: 90px 15px 15px 15px;">
-                        <div style="position: absolute; left: calc(50% - 65px); width: 130px; height: 130px; border-radius: 100%; background-color: #657a79; transform: translateY(-80px);">
-                            <div style="position: relative; left: 15px; top: 15px; width: 100px; height: 100px; border-radius: 100%; background-color: #bbcbca;">
-                                <img style="width: 100%; position: relative;" src="./assets/desktop-solid.png">
+                <div class="service_panels_container">
+                    <div class="service_panel">
+                        <div class="icon_mask">
+                            <div class="icon_container">
+                                <img class="icon" src="./assets/desktop-solid.png">
                             </div>
                         </div>
-                        <img style="width: 100%; height: 200px; border-radius: 18px;" src="./assets/pc_building.jpg">
-                        <div style="position: static; width: 100%;">
-                            <div style="position: absolute; width: 400px; font-size: 40pt; font-family: Signika; background: linear-gradient(#00000000 0%, #9eafae 60%, #9eafae 100%); padding: 65px 0px 10px 0px; transform: translateY(-120px); text-align: center;">
+                        <img class="image" src="./assets/pc_building.jpg">
+                        <div class="content">
+                            <div class="title">
                                 PC Building
                             </div>
-                            <div style="width: 80%; padding: 10%; font-size: 18pt; font-family: Signika; text-align: center;">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam.
                             </div>
                         </div>
                     </div>
-                    <div style="position: relative; width: 400px; border-radius: 18px; background-color: #9eafae; margin: 90px 15px 15px 15px;">
-                        <div style="position: absolute; left: calc(50% - 65px); width: 130px; height: 130px; border-radius: 100%; background-color: #657a79; transform: translateY(-80px);">
-                            <div style="position: relative; left: 15px; top: 15px; width: 100px; height: 100px; border-radius: 100%; background-color: #bbcbca;">
-                                <img style="width: 100%; position: relative;" src="./assets/virus-solid.png">
+                    <div class="service_panel">
+                        <div class="icon_mask">
+                            <div class="icon_container">
+                                <img class="icon" src="./assets/virus-solid.png">
                             </div>
                         </div>
-                        <img style="width: 100%; height: 200px; border-radius: 18px;" src="./assets/virus_removal.jpg">
-                        <div style="position: static; width: 100%;">
-                            <div style="position: absolute; width: 400px; font-size: 40pt; font-family: Signika; background: linear-gradient(#00000000 0%, #9eafae 60%, #9eafae 100%); padding: 65px 0px 10px 0px; transform: translateY(-120px); text-align: center;">
+                        <img class="image" src="./assets/virus_removal.jpg">
+                        <div class="content">
+                            <div class="title">
                                 Virus Removal
                             </div>
-                            <div style="width: 80%; padding: 10%; font-size: 18pt; font-family: Signika; text-align: center;">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam.
                             </div>
                         </div>
                     </div>
-                    <div style="position: relative; width: 400px; border-radius: 18px; background-color: #9eafae; margin: 90px 15px 15px 15px;">
-                        <div style="position: absolute; left: calc(50% - 65px); width: 130px; height: 130px; border-radius: 100%; background-color: #657a79; transform: translateY(-80px);">
-                            <div style="position: relative; left: 15px; top: 15px; width: 100px; height: 100px; border-radius: 100%; background-color: #bbcbca;">
-                                <img style="width: 100%; position: relative;" src="./assets/screwdriver-wrench-solid.png">
+                    <div class="service_panel">
+                        <div class="icon_mask">
+                            <div class="icon_container">
+                                <img class="icon" src="./assets/screwdriver-wrench-solid.png">
                             </div>
                         </div>
-                        <img style="width: 100%; height: 200px; border-radius: 18px;" src="./assets/troubleshooting.jpg">
-                        <div style="position: static; width: 100%;">
-                            <div style="position: absolute; width: 400px; font-size: 40pt; font-family: Signika; background: linear-gradient(#00000000 0%, #9eafae 60%, #9eafae 100%); padding: 65px 0px 10px 0px; transform: translateY(-120px); text-align: center;">
+                        <img class="image" src="./assets/troubleshooting.jpg">
+                        <div class="content">
+                            <div class="title">
                                 Troubleshooting
                             </div>
-                            <div style="width: 80%; padding: 10%; font-size: 18pt; font-family: Signika; text-align: center;">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam.
                             </div>
                         </div>
                     </div>
@@ -95,6 +103,24 @@
                 </div>
             </div>
         </div>
-        <div id="about" style="width: 100%; background-color: #798e8d; height: 400px;"></div>
+        <div id="about" class="about_container">
+            <div class="flex">
+                <div class="image_container">
+                    <img src="./assets/john.png">
+                </div>
+                <div class="content">
+                    <div class="title">Who I Am</div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 100px; overflow: hidden; background-color: #798e8d; margin-top: -10px; padding-top: 10px;">
+            <div style="position: absolute; right: 0px; color: white; padding-right: 20px; font-size: 14pt; z-index: 1; transform: translateY(50px); font-family: Signika;">&copy; Copyright 2023 </div>
+            <div style="background-color: #526665; width: 100%; height: 100px; transform: skewY(-3deg); padding-bottom: 400px; margin-top: 50px;"></div>
+        </div>
     </body>
 </html>

@@ -109,11 +109,11 @@ a {
     flex-wrap: wrap;
     margin-bottom: 100px;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .service_panels_container .service_panel {
     position: relative;
-    align-self: center;
     border-radius: 18px;
     background-color: #9eafae;
     margin: 90px 15px 15px 15px;
@@ -188,6 +188,7 @@ a {
     }
 
     .service_panels_container .service_panel {
+        align-self: center;
         width: 550px;
     }
 
